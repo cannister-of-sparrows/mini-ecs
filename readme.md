@@ -1,4 +1,4 @@
-# 🧠 Mini ECS
+# Mini ECS
 
 *A minimal, header-only Entity Component System for C — simple, flexible, and tiny.*
 
@@ -7,25 +7,17 @@
 
 ---
 
-## ✨ Overview
+## Features
 
-**Mini ECS** is a lightweight, header-only **Entity Component System (ECS)** framework written in pure C. It’s designed for simplicity, clarity, and educational value — with zero dependencies and a focus on being embedded directly into small projects or prototypes.
-
-The system avoids complexity in favor of readability, using just macros and flat arrays to manage components and entities.
-
----
-
-## 📦 Features
-
-- 🧱 **Component-based**: Data is stored in tightly packed arrays.
-- 🔍 **Query macros**: Use `MECS_FOREACH` macros to filter entities with specific components.
-- 🎯 **No dynamic memory allocation required**.
-- 📁 **Single-header**: Drop `mini_ecs.h` into your project — done.
-- 💡 **Includes a Snake game demo** to show the ECS system in action.
+- **Component-based**: Data is stored in tightly packed arrays.
+- **Query macros**: Use `MECS_FOREACH` macros to filter entities with specific components.
+- **No dynamic memory allocation required**.
+- **Single-header**: Drop `mini_ecs.h` into your project — done.
+- **Includes a Snake game demo** to show the ECS system in action.
 
 ---
 
-## 🚀 Quick Example
+## Quick Example
 
 ```c
 #include "mini_ecs.h"
@@ -49,18 +41,7 @@ void update(World* world) {
 
 ---
 
-## 🕹 Snake Demo
-
-Included in the repository is `mecs_snake.c` — a full implementation of the classic Snake game using only ECS principles:
-
-- No special casing for “snakes” — just components like `Position`, `Direction`, `Follower`, `Edible`.
-- Extensible: Add multiple snakes, AI-controlled hazards, decay timers, or portals with minimal code changes.
-
-📄 Check the file header for suggested ECS-based gameplay extensions!
-
----
-
-## 📚 API Summary
+## API Summary
 
 | Macro / Function              | Description                                      |
 |-------------------------------|--------------------------------------------------|
@@ -74,7 +55,7 @@ Included in the repository is `mecs_snake.c` — a full implementation of the cl
 
 ---
 
-## ⚖️ License
+## License
 
 This project is licensed under the **GNU GPLv3**.  
 See [LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html) for details.
